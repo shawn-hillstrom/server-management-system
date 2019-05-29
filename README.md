@@ -2,7 +2,7 @@
 
 ## About
 
-This project implements a rudimentary remote server management system for Linux. There are two source code files, **mftp.c** and **mftpserve.c**, which contain the source code for the client and server side services, respectivelly. The server can handle up to 5 connections at a time, and the client must terminate before connecting again.
+This project implements a rudimentary remote server management system for Linux. The server can handle up to 5 connections at a time and relies on simple, shell-like commands on the client side to implement basic file management features. 
 
 ## Versioning
 
@@ -31,7 +31,7 @@ To build the system:
 To use the system:
 1. Run `make runserver` to start the server.
 2. Run `make runclient` to create a client connection on localhost.
-2. Otherwise, run `./mftp <HOSTNAME || IPV4>` to create a client connection on the given hostname or ipv4 address.
+3. Otherwise, run `./mftp <HOSTNAME || IPV4>` to create a client connection on the given hostname or ipv4 address.
 
 ## Future Development
 
